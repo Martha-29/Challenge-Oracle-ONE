@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🔐 Encriptador de mensajes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+
+<body>
+    <!-- Área para mostrar el texto encriptado/desencriptado. -->
+    <header>
+        <div class="caja">
+            <h1 class="titulo">
+                🔐 Bienvenido al encriptador - desencriptador de mensajes 🔐
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <textarea id="texto" class="mensaje" placeholder="Introduce tu mensaje aquí"></textarea>
+            <div class="encriptado" id="resultado">
+                <img src="Muñeco.png" alt="Muñeco con lupa" class="lupa">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <h3 id="tag"> ✅ Copiado en el portapeles</h3>
+                <input type="button" value="Copiar" class="copybutton" onclick="copiar()" onmouseout="out()" id="copy"> 
+            </div>
+            <input type="button" value="Encriptar" class="encriptar" onclick="encriptar()">
+            <input type="button" value="Desencriptar" class="desencriptar" onclick="desencriptar()">
+            <p>&#x2757;&#xfe0e Sólo letras minúsculas y sin acentos</p>
+        </form>
+
+
+    </main>
+
+    <footer>
+        Made by Martha Patricia García Ángeles 🤓<br>
+        2024
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
